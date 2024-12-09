@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donaciones - Reserva Ecológica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Ayuda a Proteger Nuestra Reserva Ecológica "El Ángel"</h1>
+    <p>Los incendios forestales han afectado gravemente a nuestra fauna y flora. ¡Tu donación puede marcar la diferencia!</p>
+  </header>
+
+  <main class="main">
+    <div class="video-background">
+      <video autoplay muted loop>
+        <source src="resources/video_paramo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
+    <div class="content">
+      <section class="donation-form">
+        <h2>Haz tu Donación</h2>
+        <form id="donationForm">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+          <label for="amount">Monto de Donación ($):</label>
+          <input type="number" id="amount" name="amount" placeholder="Monto a donar" min="1" required>
+
+          <button type="submit">Donar Ahora</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Gracias por ayudar a salvar nuestro planeta 🌍</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
