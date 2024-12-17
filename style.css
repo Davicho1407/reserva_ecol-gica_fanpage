@@ -81,52 +81,63 @@ main {
   font-weight: bold;
 }
 .button-section {
-padding:98px;    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .tree-button {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    position: relative;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
 
-.tree-button:before {
-    content: '';
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
-    background-color: #4CAF50;
-    border-radius: 50%;
+.tree {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #4CAF50;
+  position: relative;
 }
 
-.tree-button:after {
-    content: '';
-    position: absolute;
-    top: -110px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: #4CAF50;
-    border-radius: 50%;
+.tree:before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  background-color: #4CAF50;
+  border-radius: 50%;
 }
 
-.tree-button:hover {
-    background-color: #45a049;
+.tree:after {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+}
+
+.trunk {
+  width: 20px;
+  height: 50px;
+  background-color: #8B4513;
+  margin-top: -20px;
+}
+
+.grass {
+  width: 100px;
+  height: 20px;
+  background-color: #228B22;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 footer {
